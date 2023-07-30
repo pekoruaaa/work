@@ -17,7 +17,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="hlearning" options="-parameters" />
+      <module name="hlearning" options="" />
       <module name="mybatis" options="-parameters" />
       <module name="spmsys" options="-parameters" />
     </option>

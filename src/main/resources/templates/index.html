@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="无论您是学生、教师还是家长，乐学智慧教育平台都将成为您学习道路上不可或缺的伙伴。让我们携手共建一个积极、高效、愉快的学习社区，共同追求知识与智慧的辉煌！"
+    />
+
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="user/img/favicon.png" />
+    <link rel="apple-touch-icon" href="user/img/apple-touch-icon.png" />
+    <link rel="manifest" href="../static/user/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="user/css/general.css" />
+    <link rel="stylesheet" href="user/css/style.css" />
+    <link rel="stylesheet" href="user/css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="user/js/script.js"></script>
+
+    <title>乐学智慧教育平台 &mdash; 欢迎您！</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="shell">
+        <div class="card">
+            <h1><span class="word">乐学</span><br>智慧教育平台</h1>
+        </div>
+    </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#home">首页</a></li>
+          <li><a class="main-nav-link" href="#class">课程推荐</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">教师推荐</a>
+          </li>
+          <li><a class="main-nav-link" href="#conus">联系我们</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">登录</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main id="home">
+      <section class="section-hero" >
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">欢迎来到<br>乐学智慧教育平台</h1>
+            
+            <p class="hero-description">
+              我们的使命是通过创新科技和教育方法，提供全面的学习体验，帮助用户实现自己的学业目标，并全面发展个人潜能。无论是学习辅导、知识分享还是学科竞赛，乐学智慧教育平台将为您提供全方位的支持和服务。
+            </p>
+            <a href="#cta" class="btn btn--full margin-right-sm">登录</a>
+            <a href="#class" class="btn btn--outline">更多了解 &darr;</a>
+            <div class="delivered-meals">
+              <div class="delivered-imgs">
+                <img src="user/img/customers/customer-1.jpg" alt="Customer photo" />
+                <img src="user/img/customers/customer-2.jpg" alt="Customer photo" />
+                <img src="user/img/customers/customer-3.jpg" alt="Customer photo" />
+                <img src="user/img/customers/customer-4.jpg" alt="Customer photo" />
+                <img src="user/img/customers/customer-5.jpg" alt="Customer photo" />
+                <img src="user/img/customers/customer-6.jpg" alt="Customer photo" />
+              </div>
+              <p class="delivered-text"><span>250,000+</span> 学员推荐!</p>
+            </div>
+          </div>
+
+         <div class="slideshow-container">
+            <div class="slide">
+              <img src="user/img\01.png" alt="Image 1">
+            </div>
+            <div class="slide">
+              <img src="user/img\02.png" alt="Image 2">
+            </div>
+            <div class="slide">
+              <img src="user/img\03.png" alt="Image 3">
+            </div>
+
+            <!-- 左右箭头按钮 -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-meals" id="class">
+        <div class="container center-text">
+          <span class="subheading">课程推荐</span>
+          <h2 class="heading-secondary">本站优秀课程</h2>
+        </div>
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+          
+          <div class="meal">
+            <a onclick="window.location.href='1.html'">
+            <img
+              src="user/img/class/pyweb.png"
+              class="meal-img"
+              alt="pyweb"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--vegetarian">Python</span>
+              </div>
+              <p class="meal-title">Python Web编程</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>100w+次</strong>点击观看</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-icon"
+                    name="thumbs-up"
+                  ></ion-icon>
+                  <span>好评率：<strong>98%</strong></span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                  <span><strong>40.9w</strong>用户收藏</span>
+                </li>
+              </ul>
+            </div>
+            </a>
+          </div>
+
+          <div class="meal">
+            <a onclick="window.location.href='1.html'">
+            <img
+              src="user/img/class/程序设计.png"
+              class="meal-img"
+              alt="Avocado Salad"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--vegan">C++</span>
+                <span class="tag tag--paleo">C</span>
+              </div>
+              <p class="meal-title">程序设计基础</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>90.8w次</strong>点击观看</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-icon"
+                    name="thumbs-up"
+                  ></ion-icon>
+                  <span>好评率：<strong>97%</strong></span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                  <span><strong>38w</strong>用户收藏</span>
+                </li>
+              </ul>
+            </div>
+            </a>
+          </div>
+
+          <div class="meal">
+            <a onclick="window.location.href='1.html'">
+            <img
+              src="user/img/class/数据结构.png"
+              class="meal-img"
+              alt="Avocado Salad"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--vegan">数据结构</span>
+              </div>
+              <p class="meal-title">数据结构</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>89.5w次</strong>点击观看</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-icon"
+                    name="thumbs-up"
+                  ></ion-icon>
+                  <span>好评率：<strong>95%</strong></span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                  <span><strong>35w</strong>用户收藏</span>
+                </li>
+              </ul>
+            </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">推荐教师</span>
+          <h2 class="heading-secondary">小课堂，大师作</h2>
+
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Dave Bryson"
+                src="user/img/customers/dave.jpg"
+              />
+              <blockquote class="testimonial-text">
+                每一次的学习都是进步的一小步，不要害怕失败，勇敢去探索新知识，学习就是一个不断成长的过程。
+              </blockquote>
+              <p class="testimonial-name">&mdash; Dave Bryson 资深教师</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Ben Hadley"
+                src="user/img/customers/ben.jpg"
+              />
+              <blockquote class="testimonial-text">
+                你的用心学习和努力不会被浪费的，即使结果不如你预期，你所学到的知识和经验都会在未来发挥作用。保持学习的热情，你会发现知识的奇妙之处。
+              </blockquote>
+              <p class="testimonial-name">&mdash; Ben Hadley 骨干教师</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Steve Miller"
+                src="user/img/customers/steve.jpg"
+              />
+              <blockquote class="testimonial-text">
+                每个人都有不同的学习步伐，不要和他人比较，专注于自己的进步，你会走得更远！
+              </blockquote>
+              <p class="testimonial-name">&mdash; Steve Miller 优秀教师</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Hannah Smith"
+                src="user/img/customers/hannah.jpg"
+              />
+              <blockquote class="testimonial-text">
+                你的学习态度和努力是值得赞赏的，继续保持，你会为自己创造一个光明的未来！
+              </blockquote>
+              <p class="testimonial-name">&mdash; Hannah Smith 资深教师</p>
+            </figure>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery-item">
+            <a onclick="window.location.href='course_Details.html'">
+                <img src="user/img/customers/ben.jpg"
+                alt="Photo of teacher"/>
+            </a>
+          </figure>
+          <figure class="gallery-item">
+            <a onclick="window.location.href='course_Details.html'">
+            <img
+              src="user\img\customers\dave.jpg"
+              alt="Photo of teacher"
+            /></a>
+          </figure>
+          <figure class="gallery-item">
+            <a onclick="window.location.href='course_Details.html'">
+            <img
+              src="user\img\customers\hannah.jpg"
+              alt="Photo of teacher"
+            /></a>
+          </figure>
+          <figure class="gallery-item">
+            <a onclick="window.location.href='course_Details.html'">
+            <img
+              src="user\img\customers\steve.jpg"
+              alt="Photo of teacher"
+            /></a>
+          </figure>
+          <figure class="gallery-item">
+            <a onclick="window.location.href='course_Details.html'">
+            <img
+              src="user\img\customers\customer-2.jpg"
+              alt="Photo of teacher"
+            /></a>
+          </figure>
+          <figure class="gallery-item">
+            <a onclick="window.location.href='course_Details.html'">
+            <img
+              src="user\img\customers\customer-3.jpg"
+              alt="Photo of teacher"
+            /></a>
+          </figure>
+          <figure class="gallery-item">
+            <a onclick="window.location.href='course_Details.html'">
+            <img
+              src="user\img\customers\customer-4.jpg"
+              alt="Photo of teacher"
+            /></a>
+          </figure>
+          <figure class="gallery-item">
+            <a onclick="window.location.href='course_Details.html'">
+            <img
+              src="user\img\customers\customer-5.jpg"
+              alt="Photo of teacher"
+            /></a>
+          </figure>
+          <figure class="gallery-item">
+            <a onclick="window.location.href='course_Details.html'">
+            <img
+              src="user\img\customers\customer-6.jpg"
+              alt="Photo of teacher"
+            /></a>
+          </figure>
+        </div>
+      </section>
+<!-- 登录 -->
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">开启课程的学习吧！！</h2>
+              <p class="cta-text">
+                尽情享受，在知识的海洋中自由遨游。
+              </p>
+              <p class="register">没有账户? 点击
+                <a th:href="@{/toRegister}">注册</a>！
+              </p>
+              <form th:action="@{/login}" method="post" class="cta-form" name="sign-up" netlify>
+                <div>
+                  <label for="full-name">用户名</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder=""
+                    name="username"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="select-where">密码</label>
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="select-where">你的身份：</label>
+                  <select id="select-where" name="role" required>
+                    <option name="role" value="">请选择：</option>
+                    <option name="role" value="1">普通用户</option>
+                    <option name="role" value="2">教师</option>
+                    <option name="role" value="3">管理员</option>
+                  </select>
+                </div>
+                <button class="btn btn--form">Sign up now</button>
+
+                <!-- <input type="checkbox" />
+                <input type="number" /> -->
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Woman enjoying food"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="conus">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="logo" src="user/img/logo.png" />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2023</span> by 乐学智慧教育平台, Inc.
+            All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">联系我们</p>
+          <address class="contacts">
+            <p class="address">
+              中国重庆市南岸区黄桷桠崇文路2号
+            </p>
+            <p>
+              <a class="footer-link" href="tel:600-820-2023">600-820-2023</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@lexue.com"
+                >hello@lexue.com</a>
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">赞助商</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">重庆邮电大学</a></li>
+            <li><a class="footer-link" href="#">第二组小组成员</a></li>
+            <li><a class="footer-link" href="#">指导老师</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">客户端</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+            <li><a class="footer-link" href="#">Windows</a></li>
+            <li><a class="footer-link" href="#">Linux</a></li>
+          </ul>
+        </nav>
+
+        
+
+        <nav class="nav-col">
+          <p class="footer-heading">课程平台</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Udemy</a></li>
+            <li><a class="footer-link" href="#">Skillshare</a></li>
+            <li><a class="footer-link" href="#">DesignCode.io</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

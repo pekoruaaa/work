@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruanko.hlearning.teacher.mapper.CourseMapper">
+
+    <select id="findAllCourses" resultType="com.ruanko.hlearning.teacher.entity.Course">
+        select * from course where cs_state = 1
+    </select>
+
+    <select id="findAllWaitCourses" resultType="com.ruanko.hlearning.teacher.entity.Course">
+        select * from course where cs_state = 2 or cs_state = 3
+    </select>
+
+    <select id="findCourses" parameterType="com.ruanko.hlearning.teacher.entity.Course" resultType="com.ruanko.hlearning.teacher.entity.Course">
+        select * from course where cs_state = 1
+        <if test="cs_id != 0 and cs_id != null" >
+            and cs_id = #{cs_id}
+        </if>
+        <if test="cs_name != null" >
+            and cs_name = #{cs_name}
+        </if>
+        <if test="cs_type != null" >
+            and cs_type = #{cs_type}
+        </if>
+    </select>
+
+    <select id="findWaitCourses" parameterType="com.ruanko.hlearning.teacher.entity.Course" resultType="com.ruanko.hlearning.teacher.entity.Course">
+        select * from course where cs_state = 2 or cs_state = 3
+        <if test="cs_id != 0 and cs_id != null" >
+            and cs_id = #{cs_id}
+        </if>
+        <if test="cs_name != null" >
+            and cs_name = #{cs_name}
+        </if>
+        <if test="cs_type != null" >
+            and cs_type = #{cs_type}
+        </if>
+    </select>
+
+    <insert id="addCourse" parameterType="com.ruanko.hlearning.teacher.entity.Course">
+        insert into course(cs_name,cs_tcid,cs_type,cs_url,cs_state) values(#{cs_name},#{cs_tcid},#{cs_type},#{cs_url},2)
+    </insert>
+
+
+    <update id="deleteCourse" parameterType="int">
+        update course set cs_state = 0 where cs_id = #{cs_id}
+    </update>
+
+    <update id="updateCourse" parameterType="com.ruanko.hlearning.teacher.entity.Course">
+        update course set cs_name = #{cs_name},cs_type = #{cs_type},cs_url = #{cs_url} where cs_id = #{cs_id}
+    </update>
+
+</mapper>

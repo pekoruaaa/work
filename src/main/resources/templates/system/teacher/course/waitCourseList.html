@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>等待审核课程列表</title>
+    <link href="/layui/css/layui.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/h-ui/css/H-ui.min.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/h-ui.admin/css/H-ui.admin.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/lib/Hui-iconfont/1.0.8/iconfont.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/h-ui.admin/skin/default/skin.css}" id="skin" />
+    <link rel="stylesheet" type="text/css" th:href="@{/h-ui.admin/css/style.css}" />
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+
+    <div th:include="teacher_header :: header"></div>
+
+    <div class="layui-body layui-container">
+
+        <section class="Hui-article-box">
+            <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 个人课程
+                <span class="c-gray en">&gt;</span>
+                上传课程资源
+            </nav>
+            <div class="Hui-article">
+                <article class="cl pd-20">
+                    <div class="text-c">
+
+                        <form th:action="@{/findWaitCourses}"  method="get" class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-xs-4">
+                                    <select class="input-text" id="option" name="option" th:value="${option}" th:filed="${option}" placeholder="请选择" style="width:120px;">
+                                        <option th:selected="${option==''}" value="">所有</option>
+                                        <option th:selected="${option=='cs_id'}" value="cs_id" >课程ID</option>
+                                        <option th:selected="${option=='cs_name'}" value="cs_name" >课程名</option>
+                                        <option th:selected="${option=='cs_type'}" value="cs_type">课程类型</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-xs-4">
+                                    <input type="text" class="input-text" id="value" th:value="${value}" name="value" style="width:120px;"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-10">
+                                    <input class="btn btn-primary" type="submit" value="查询"/>&nbsp;&nbsp;
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="cl pd-5 bg-1 bk-gray mt-20">
+				<span class="l">
+                    <a class="btn btn-primary" th:href="@{/toAdd}" data-toggle="modal">上传课程资源</a>&nbsp;
+				</span>
+                    </div>
+                    <div class="mt-20">
+                        <table class="table table-border table-bordered table-bg table-hover table-sort">
+                            <thead>
+                            <tr class="text-c">
+                                <th width="80">课程ID</th>
+                                <th width="80">课程名</th>
+                                <th width="80">类型</th>
+                                <th width="80">资源路径</th>
+                                <th width="80">课程状态</th>
+                                <th width="80">上传时间</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr class="text-c" th:each="courses:${courses}">
+                                <td th:text="${courses.cs_id}"></td>
+                                <td th:text="${courses.cs_name}"></td>
+                                <td th:text="${courses.cs_type}"></td>
+                                <td th:text="${courses.cs_url}"></td>
+                                <td th:if="${courses.cs_state} eq 2" th:text="待审核" ></td>
+                                <td th:if="${courses.cs_state} eq 3" th:text="退回" ></td>
+                                <td th:text="${courses.createtime}"></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                        <!--                        <div align="center"  style="margin-top: 40px">-->
+                        <!--                            <a class="btn btn-primary" th:href="'/check/find1'+'?page=' + 1+'&option=' + ${option}+'&value=' + ${value}" role="button">首页</a>-->
+                        <!--                            <a class="btn btn-primary" th:href="'/check/find1'+'?page=' + (${page}-1)+'&option=' + ${option}+'&value=' + ${value}" role="button">上一页</a>-->
+                        <!--                            第<input th:value="${page}" disabled="disabled" style="width: 30px;text-align: center">页-->
+                        <!--                            <a class="btn btn-primary" th:href="'/check/find1'+'?page=' + (${page}+1)+'&option=' + ${option}+'&value=' + ${value}" role="button">下一页</a>-->
+                        <!--                            <a class="btn btn-primary" th:href="'/check/find1'+'?page=' + ${pagenum}+'&option=' + ${option}+'&value=' + ${value}" role="button">尾页</a>-->
+                        <!--                        </div>-->
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+    </div>
+
+    <div th:include="footer :: footer"></div>
+
+</div>
+
+<script src="/scripts/jquery.min.js"></script>
+<script src="/layui/layui.js"></script>
+<script type="text/javascript" th:src="@{/lib/jquery/1.9.1/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/lib/layer/2.4/layer.js}"></script>
+<script type="text/javascript" th:src="@{/h-ui/js/H-ui.js}"></script>
+<script type="text/javascript" th:src="@{/h-ui.admin/js/H-ui.admin.page.js}"></script>
+<script type="text/javascript" th:src="@{/lib/My97DatePicker/4.8/WdatePicker.js}"></script>
+<script type="text/javascript" th:src="@{/lib/datatables/1.10.0/jquery.dataTables.min.js}"></script>
+<script type="text/javascript" th:src="@{/lib/laypage/1.2/laypage.js}"></script>
+<script>
+
+    layui.use(['carousel', 'element'], function () {
+        let carousel = layui.carousel;
+        let element = layui.element;
+
+        //建造实例
+        carousel.render({
+            elem: '#index'
+            , width: '900' //设置容器宽度
+            , height: '550px' //设置容器高度
+            // , full:'true' //是否全屏轮播,默认false
+            // , arrow: 'always' //始终显示箭头和点击按钮
+            // ,anim: 'updown' //切换动画方式，可从各个方向滚动
+        });
+    });
+
+    // $("button[name='agree']").click(function(){
+    //     var id = $(this).val();
+    //     console.log(id);
+    //     var obj = JSON.stringify({"id":id});
+    //     $.ajax({
+    //         url:"agree",
+    //         data:obj,
+    //         type:"POST",
+    //         contentType: "application/json;charset=utf-8",
+    //         dataType:"JSON",
+    //         traditional: true,
+    //         success:function(res){
+    //             if(res==1){
+    //                 alert("操作成功！");
+    //                 /*window.location.replace("/check/list");*/
+    //             }else if(res==2){
+    //                 alert("操作失败！");
+    //             }else if(res==3){
+    //                 alert("已审核！");
+    //             }else{
+    //                 alert("无需操作！");
+    //             }
+    //         }
+    //     })
+    // })
+
+    // $("button[name='delete']").click(function(){
+    //     var id = $(this).val();
+    //     var obj = JSON.stringify({"id":id});
+    //     $.ajax({
+    //         url:"delete",
+    //         data:obj,
+    //         type:"POST",
+    //         contentType: "application/json;charset=utf-8",
+    //         dataType:"JSON",
+    //         traditional: true,
+    //         success:function(res){
+    //             if(res==1){
+    //                 alert("操作成功！");
+    //                 window.location.replace("/check/list");
+    //             }else if(res==2){
+    //                 alert("操作失败！");
+    //             }else if(res==3){
+    //                 alert("已审核！");
+    //             }else{
+    //                 alert("无需操作！");
+    //             }
+    //         }
+    //     })
+    // })
+
+</script>
+
+</body>
+</html>

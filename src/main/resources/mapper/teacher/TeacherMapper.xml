@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruanko.hlearning.teacher.mapper.TeacherMapper">
+
+    <select id="findInfo" resultType="com.ruanko.hlearning.teacher.entity.Teacher">
+        select * from teacher where tc_id = 1
+    </select>
+
+    <select id="findPwd" resultType="string">
+        select tc_password from teacher where tc_id = #{tc_id}
+    </select>
+
+    <update id="updateInfo" parameterType="com.ruanko.hlearning.teacher.entity.Teacher">
+        update teacher set tc_email = #{tc_email},tc_phone = #{tc_phone},tc_image = #{tc_image},tc_introduce = #{tc_introduce} where tc_id = #{tc_id}
+    </update>
+
+    <update id="updatePwd" parameterType="com.ruanko.hlearning.teacher.entity.Teacher">
+        update teacher set tc_password = #{tc_password} where tc_id = #{tc_id}
+    </update>
+
+    <update id="delete" parameterType="int">
+        update teacher set tc_state = 0 where tc_id = #{tc_id}
+    </update>
+
+    <select id="teacherByNameAndPwd" resultType="com.ruanko.hlearning.teacher.entity.Teacher">
+        select * from teacher where tc_name = #{tc_name} and tc_password = #{tc_password}
+    </select>
+
+
+</mapper>

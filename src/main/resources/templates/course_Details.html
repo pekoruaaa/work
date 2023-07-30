@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/1.css" />
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="../static/user/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="js/script.js"></script>
+    <title>乐学智慧教育平台 &mdash; 欢迎您！</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="nav">
+            <a href="index.html">首页</a>
+            <a href="#">课程</a>
+            <a href="#">教师</a>
+            <a href="#">联系我们</a>
+            <p>乐学智慧教育平台</p>
+        </div>
+        <div class="middle">
+            <div class="fm">
+                <video width="540" height="360" controls>
+                    <source src="#" type="video/mp4">
+                    <!-- 添加其他视频格式的source标签，以兼容不同浏览器 -->
+                </video>
+            </div>
+            <div class="kec">
+                <h1>软件测试</h1>
+                <h3>课程简介</h3>
+                <span class="kcjj">
+                    随着信息技术的发展，软件已经深入到人类社会生产和生活的各个方面。软件工程是将工程化的方法运用到软件的开发、运行和维护之中，以达到提高软件质量，降低开发成本的目的。软件工程已经成为当今最活跃、最热门的学科之一。
+                    本次软件工程MOOC课程是一门导论性课程，我们将全面介绍软件工程所涉及的各方面知识，包括软件过程、软件需求、结构化分析和设计方法、面向对象分析和设计方法、敏捷开发方法、软件测试、软件项目管理、软件开发工具和环境。通过课程讲授，让大家初步了解软件开发和维护的方法学，为进一步深入学习各专题打下基础。
+                    课程还包含了实践环节，通过一个小型软件项目，大家可以体验软件开发的各个环节，并形成项目管理的意识。</span>
+
+                <button id="likeButton" class="thumbs-up-button"><i class="fas fa-thumbs-up"></i> </button>
+                <span>点赞数：<span id="likeCount">0</span></span>
+                <script src="./js/1.js"></script>
+            </div>
+        </div>
+        <div class="kcdp">
+            <h4>查看课程评价</h4>
+            <!-- 评论输入框和提交按钮 -->
+            <form id="commentForm">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <a href="#"><img src="./img/images.jpg" alt="头像"></a>
+                    </div>
+                </div>
+                <div class="container">
+                    <textarea id="comment" rows="4" cols="50" placeholder="请输入你的评论..."></textarea>
+                    <button onclick="submitComment()" class="bbt">提交</button>
+                </div>
+            </form>
+            <!-- 评论列表 -->
+            <!-- 已有评论 -->
+            <div id="comments" class="yypl">
+                <div class="comment">
+                    <strong>张三：</strong>教师通过对课本的独到深入的讲解，达到了很好的教学效果，能结合多种教学手段，使学生对知识的掌握更深刻。教学内容重点突出，教学目的十分明确。
+                </div>
+                <div class="comment">
+                    <strong>李四：</strong>老师对待教学认真负责，语言生动，条理清晰，举例充分恰当，对待学生严格要求，能够鼓励学生踊跃发言，使课堂气氛比较积极热烈。
+                </div>
+                <div class="comment">
+                    <strong>王五：</strong>老师上课诙谐有趣，他善于用凝练的语言将复杂难于理解的过程公式清晰、明确的表达出来。讲课内容紧凑、丰富，并附有大量例题和练习题，十分有利于同学们在较短时间内掌握课堂内容。
+                </div>
+                <div class="comment">
+                    <strong>小明：</strong>老师在授课中，内容深且广，涵盖面广，能联系古今，结合时代背景，在充分了解诗人，词人等古人的人生经历的同时更好地使学生们理解古文学作品的内涵与意蕴，同时在学习中使学生陶冶情操，增加了素养。教学效果显著，合同学们在学好古代文学专业课的同时，增加了人文素质，提高了文学品味，加强自身修养，使学生在轻松活跃的学习氛围中，增长了知识。
+                </div>
+                <div class="comment">
+                    <strong>小李：</strong>教师的教学效果极佳，可以使同学在领略知识魅力的同时提高自己实际技能。教师教课内容广大博深，高质量，高效率。教课内容新颖，独特，有个性。教师授课表现出来的激情和精神可以深深吸引并打动学生，希望我们的老师可以继续创新，造出更多的精品课。
+                </div>
+                <div class="comment">
+                    <strong>小张：</strong>教师上课认真负责，专业基础极技能高深，非常注重学生的实际动手能力。老师常常告诫学生，书法要从心开始，勤于练习。注重学生专业能力和素养的培养。上课语言幽默，互动适当，演示精准精彩。学生上课出勤率高，教学效果极其明显。
+                </div>
+                <div class="comment">
+                    <strong>小秦：</strong>教师将注意力放在了大框架上面，很多细节都忽略了。细节决定成败，因此，建议该老师不仅要从大的框架进行讲解，小细节也是要多加注意的。
+                </div>
+            </div>
+            <script src="./js/2.js"></script>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

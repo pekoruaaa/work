@@ -1,0 +1,202 @@
+ .box {
+     width: 1200px;
+
+
+ }
+
+ body {
+     margin: 0;
+     padding-top: 60px;
+     /* 给固定div预留空间，防止被内容遮挡 */
+
+
+ }
+
+ .box {
+     width: 1200px;
+     margin: 0 auto;
+
+ }
+
+ /* 头部 */
+ .nav {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 41px;
+     font-size: 20px;
+     border-top: 3px solid #ff8500;
+     border-bottom: 1px solid #edeef0;
+     background-color: #fcfcfc;
+     line-height: 41px;
+     z-index: 1;
+ }
+
+ .nav a {
+     display: inline-block;
+     height: 40px;
+     padding: 0px 20px;
+     font-size: 20px;
+     color: #4c4c4c;
+     text-decoration: none;
+ }
+
+ .nav p {
+     float: right;
+     padding: 0 20px 0 0;
+     margin: 0;
+ }
+
+ .nav a:hover {
+     background-color: #eee;
+     color: #ff8500;
+ }
+
+ .fm {
+     float: left;
+     margin-top: 140px;
+ }
+
+
+
+ .kec {
+     float: right;
+     margin-top: 20px;
+     width: 600px;
+ }
+
+ .kec h1 {
+     text-align: center;
+ }
+
+ .kcjj {
+     font-size: 20px;
+ }
+
+ .kcdp {
+     float: left;
+     margin-top: 20px;
+     border: 4px solid #3b3b3b;
+ }
+
+ .kcdp h4 {
+     padding-left: 10px;
+ }
+
+ .container {
+     margin-left: 5px;
+ }
+
+ .thumbs-up-button {
+     margin-bottom: 10px;
+     margin-top: 30px;
+     width: 50px;
+     height: 50px;
+     border: none;
+     background-color: #4CAF50;
+     /* 设置按钮背景颜色 */
+     color: white;
+     /* 设置按钮文字颜色 */
+     font-size: 24px;
+     /* 设置图标大小 */
+     border-radius: 50%;
+     /* 设置按钮为圆形 */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     /* 添加鼠标指针样式 */
+ }
+
+ #commentForm {
+     display: flex;
+     align-items: center;
+ }
+
+
+ /* 设置头像样式 */
+ .avatar {
+     margin-left: 100px;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     overflow: hidden;
+     /* 隐藏头像溢出部分 */
+ }
+
+ /* 设置头像图片样式 */
+ .avatar img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     /* 保持图片比例，裁剪溢出部分 */
+ }
+
+ /* 设置头像容器位置 */
+ .avatar-container::before {
+     content: '';
+     /* 添加一个伪元素，用于定位头像容器 */
+     position: absolute;
+     /* 设置伪元素为绝对定位 */
+     left: -60px;
+     /* 负值使头像容器偏移到文本域的左边 */
+     top: 0;
+ }
+
+ textarea {
+     float: left;
+     resize: none;
+     outline: none;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     width: 800px;
+     height: 40px;
+     transition: height 0.5s;
+ }
+
+
+
+ textarea:focus {
+     height: 63px;
+     border: 1px solid #ccc;
+
+ }
+
+ .bbt {
+     float: left;
+     border: none;
+     background-color: #7fd6f5;
+     margin-left: 10px;
+     border-radius: 5px;
+     font-size: 16px;
+     font-weight: bold;
+     color: white;
+     height: 40px;
+     width: 100px;
+     transition: height 0.5s;
+ }
+
+
+ .bbt:hover {
+     background-color: #45adf3;
+ }
+
+ .container:focus-within .bbt {
+     height: 63px;
+ }
+
+ .container:focus-within textarea {
+     height: 63px;
+ }
+
+ .yypl {
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 40px;
+     padding-bottom: 40px;
+ }
+
+ .yypl .comment {
+     margin-top: 50px;
+ }

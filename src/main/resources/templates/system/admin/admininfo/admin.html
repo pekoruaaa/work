@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link href="/layui/css/layui.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/h-ui/css/H-ui.min.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/h-ui.admin/css/H-ui.admin.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/lib/Hui-iconfont/1.0.8/iconfont.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/h-ui.admin/skin/default/skin.css}" id="skin" />
+    <link rel="stylesheet" type="text/css" th:href="@{/h-ui.admin/css/style.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/h-ui/css/userInfo.css}" />
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+
+    <div th:include="header :: header"></div>
+
+    <div class="layui-body layui-container">
+
+        <section class="Hui-article-box">
+            <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页
+                <span class="c-gray en">&gt;</span>
+                个人中心
+            </nav>
+            <div class="Hui-article">
+
+                <div class="container">
+                    <div class="c-left" style="height: 450px">
+                        <div class="l-img"  th:each="admin : ${admin}" >
+                            <h2>基本信息</h2>
+                            <p al>工号：&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #86868b"  th:text="${admin.loginnum}"></span></p>
+                            <p>姓名：&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #86868b" th:text="${admin.name}"></span></p>
+                            <p>手机号：&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #86868b" th:text="${admin.phone}"></span></p>
+                            <button style="margin-left: 50px;margin-top: 40px; width: 90px;" class="btn btn-danger" th:value="${admin.adminid }"  name="delete" data-toggle="modal">注销</button>
+                        </div>
+                        <button style="margin-left: 30px;margin-top: 55px; width: 90px;" class="btn btn-primary" data-toggle="modal" onclick="pwd()" >修改密码</button>
+                        <button style="margin-left: 40px;margin-top: 55px; width: 90px;" class="btn btn-primary"  data-toggle="modal" onclick="update()" >修改信息</button>
+                    </div>
+                    <div class="c-right" style="height: 500px">
+                        <div id="update">
+
+                            <div class="r-title">
+                                <h2>修改个人信息</h2>
+                            </div>
+                            <div class="r-table" style="margin-top: 50px;">
+                                <form th:action="@{/system/admin/update}"  method="post" class="form form-horizontal" >
+                                    <div class="row cl">
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="hidden" class="input-text"  placeholder="" id="adminid" name="adminid" th:value="${admin.adminid}" th:field="${admin.adminid}" />
+                                        </div>
+                                    </div>
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>工号：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text" autocomplete="off" id="loginnum" name="loginnum" disabled="disabled" th:value="${admin.loginnum}"
+                                                   th:field="${admin.loginnum}">
+                                        </div>
+                                    </div>
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>姓名：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text" autocomplete="off" id="name" name="name" required pattern="^[\u4e00-\u9fa5]{2,6}$" title="名字必须是大于1，小于6的中文"  th:value="${admin.name}"
+                                                   th:field="${admin.name}">
+                                        </div>
+                                    </div>
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>手机号：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text" autocomplete="off" id="phone" name="phone" required pattern="^[1][3,4,5,7,8][0-9]{9}$" title="手机号必须是11为数字" th:value="${admin.phone}"
+                                                   th:field="${admin.phone}">
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: 240px;margin-top:20px;" >
+                                        <!--<button class="btn btn-primary" name="update" th:value="${staff}">保存</button>-->
+                                        <input class="btn btn-primary" value="保存"  type="submit"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="upwd">
+
+
+                            <div class="r-title">
+
+                                <h2>修改密码</h2>
+                            </div>
+                            <div class="r-table" style="margin-top: 50px;">
+                                <form th:action="@{/system/admin/zpwd}"  method="post" class="form form-horizontal" >
+                                    <div class="row cl">
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="hidden" class="input-text"  placeholder="" id="adminid1" name="adminid1" th:value="${admin.adminid}" th:field="${admin.adminid}" />
+                                        </div>
+                                    </div>
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">原密码：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="password" class="input-text" required name="npwd" id="npwd" placeholder="原密码" >
+                                        </div>
+                                    </div>
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">密码：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="password" class="input-text" required pattern="^[\w]{3,16}$" title="密码必须是大于2，小于17！" name="pwd" id="pwd" placeholder="密码">
+                                        </div>
+                                    </div>
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">确认密码：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="password" class="input-text" required name="zpwd" id="zpwd" placeholder="确认密码" onblur="zpw()">
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: 240px;margin-top:20px;" >
+                                        <!--<button class="btn btn-primary" name="update" th:value="${staff}">保存</button>-->
+                                        <input class="btn btn-primary" value="保存"  type="submit"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div th:include="footer :: footer"></div>
+
+</div>
+
+<script th:src="@{/layui/layui.js}"></script>
+<script type="text/javascript" th:src="@{/lib/jquery/1.9.1/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/lib/layer/2.4/layer.js}"></script>
+<script type="text/javascript" th:src="@{/h-ui/js/H-ui.js}"></script>
+<script type="text/javascript" th:src="@{/h-ui.admin/js/H-ui.admin.page.js}"></script>
+<script type="text/javascript" th:src="@{/lib/My97DatePicker/4.8/WdatePicker.js}"></script>
+<script type="text/javascript" th:src="@{/lib/datatables/1.10.0/jquery.dataTables.min.js}"></script>
+<script type="text/javascript" th:src="@{/lib/laypage/1.2/laypage.js}"></script>
+<script>
+
+    document.getElementById("upwd").style.display = "none";
+    var patt=[];
+    /*//密码必须超过3位
+    function pw(){
+        var pwd=document.getElementById("pwd").value;
+        patt.pwd=/^[\w]{3,16}$/;
+        if(patt.pwd.test(pwd)==false){
+            alert("密码必须大于3位！");
+        }
+    }*/
+    function zpw(){
+        var rpwd=document.getElementById("zpwd").value;
+        var pwd=document.getElementById("pwd").value;
+        if(rpwd!=pwd){
+            alert("与上面密码不一致！");
+        }
+    }
+
+    function pwd(){
+        document.getElementById("update").style.display = "none";
+        document.getElementById("upwd").style.display = "block";
+    }
+
+    function update(){
+        document.getElementById("update").style.display = "block";
+        document.getElementById("upwd").style.display = "none";
+    }
+
+    layui.use(['carousel', 'element'], function () {
+        let carousel = layui.carousel;
+        let element = layui.element;
+
+        //建造实例
+        carousel.render({
+            elem: '#index'
+            , width: '900' //设置容器宽度
+            , height: '550px' //设置容器高度
+            // , full:'true' //是否全屏轮播,默认false
+            // , arrow: 'always' //始终显示箭头和点击按钮
+            // ,anim: 'updown' //切换动画方式，可从各个方向滚动
+        });
+    });
+
+    $("button[name='delete']").click(function(){
+        var id = $(this).val();
+        var obj = JSON.stringify({"id":id});
+        var sur =confirm("确定注销吗？");
+        if(sur){
+            $.ajax({
+                url:"delete",
+                data:obj,
+                type:"POST",
+                contentType: "application/json;charset=utf-8",
+                dataType:"JSON",
+                traditional: true,
+                success:function(res){
+                    if(res==1){
+                        alert("注销成功！");
+                        window.location.replace("/login");
+                    }else{
+                        alert("注销失败！");
+                    }
+                }
+            })
+        }
+    })
+
+
+</script>
+
+</body>
+</html>
