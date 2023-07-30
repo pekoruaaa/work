@@ -22,633 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9b7edec-7d13-48da-ba89-1e9e1dd521d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cxnex.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sql/easy_202001017.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sql/quartz.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/CxNexApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/CxNexServletInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/constant/CommonMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/constant/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/constant/GenConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/constant/PermissionConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/constant/ScheduleConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/constant/ShiroConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/constant/UserConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/BusinessException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/DemoModeException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/UtilException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/base/BaseException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/file/FileException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/file/FileNameLengthLimitExceededException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/file/FileSizeLimitExceededException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/file/InvalidExtensionException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/job/TaskException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/user/CaptchaException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/user/RoleBlockedException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/user/UserBlockedException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/user/UserDeleteException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/user/UserException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/user/UserNotExistsException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/user/UserPasswordNotMatchException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/user/UserPasswordRetryLimitCountException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/exception/user/UserPasswordRetryLimitExceedException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/AddressUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/Arith.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/CacheUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/CookieUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/DateUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/ExceptionUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/IpUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/LogUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/MapDataUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/Md5Utils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/MessageUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/ServletUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/StringUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/Threads.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/TreeUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/bean/BeanUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/file/FileTypeUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/file/FileUploadUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/file/FileUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/file/MimeTypeUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/html/EscapeUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/html/HTMLFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/http/HttpUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/poi/ExcelUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/reflect/ReflectUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/security/AuthorizationUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/security/PermissionUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/security/ShiroUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/spring/SpringUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/sql/SqlUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/text/CharsetKit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/text/Convert.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/text/StrFormatter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/uuid/IdUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/utils/uuid/UUID.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/xss/XssFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/common/xss/XssHttpServletRequestWrapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/aspectj/DataScopeAspect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/aspectj/DataSourceAspect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/aspectj/LogAspect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/aspectj/lang/annotation/DataScope.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/aspectj/lang/annotation/DataSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/aspectj/lang/annotation/Excel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/aspectj/lang/annotation/Excels.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/aspectj/lang/annotation/Log.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/aspectj/lang/enums/BusinessStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/aspectj/lang/enums/BusinessType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/aspectj/lang/enums/DataSourceType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/aspectj/lang/enums/OperatorType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/ApplicationConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/CaptchaConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/CxNexConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/DruidConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/FilterConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/GenConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/I18nConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/KaptchaTextCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/MyBatisConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/ResourcesConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/ScheduleConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/ServerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/ShiroConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/ThreadPoolConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/config/properties/DruidProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/datasource/DynamicDataSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/datasource/DynamicDataSourceContextHolder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/interceptor/RepeatSubmitInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/interceptor/annotation/RepeatSubmit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/interceptor/impl/SameUrlDataInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/manager/AsyncManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/manager/ShutdownManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/manager/factory/AsyncFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/shiro/realm/UserRealm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/shiro/service/LoginService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/shiro/service/PasswordService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/shiro/service/RegisterService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/shiro/session/OnlineSessionDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/shiro/session/OnlineSessionFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/shiro/web/filter/LogoutFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/shiro/web/filter/captcha/CaptchaValidateFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/shiro/web/filter/kickout/KickoutSessionFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/shiro/web/filter/online/OnlineSessionFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/shiro/web/filter/sync/SyncOnlineSessionFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/shiro/web/session/OnlineWebSessionManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/shiro/web/session/SpringSessionValidationScheduler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/web/controller/BaseController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/web/domain/AjaxResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/web/domain/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/web/domain/CxSelect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/web/domain/TreeEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/web/domain/Ztree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/web/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/web/page/PageDomain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/web/page/TableDataInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/web/page/TableSupport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/web/service/ConfigService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/web/service/DictService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/framework/web/service/PermissionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/common/CommonController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/demo/controller/DemoDialogController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/demo/controller/DemoFormController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/demo/controller/DemoIconController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/demo/controller/DemoOperateController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/demo/controller/DemoReportController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/demo/controller/DemoTableController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/demo/domain/CustomerModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/demo/domain/GoodsModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/demo/domain/UserOperateModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/druid/DruidController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/controller/JobController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/controller/JobLogController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/domain/Job.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/domain/JobLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/mapper/JobLogMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/mapper/JobMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/service/IJobLogService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/service/IJobService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/service/JobLogServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/service/JobServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/task/EasyTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/util/AbstractQuartzJob.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/util/CronUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/util/JobInvokeUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/util/QuartzDisallowConcurrentExecution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/util/QuartzJobExecution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/job/util/ScheduleUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/logininfor/controller/LogininforController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/logininfor/domain/Logininfor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/logininfor/mapper/LogininforMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/logininfor/service/ILogininforService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/logininfor/service/LogininforServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/online/controller/UserOnlineController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/online/domain/OnlineSession.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/online/domain/UserOnline.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/online/mapper/UserOnlineMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/online/service/IUserOnlineService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/online/service/UserOnlineServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/operlog/controller/OperlogController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/operlog/domain/OperLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/operlog/mapper/OperLogMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/operlog/service/IOperLogService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/operlog/service/OperLogServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/server/controller/ServerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/server/domain/Cpu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/server/domain/Jvm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/server/domain/Mem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/server/domain/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/server/domain/Sys.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/monitor/server/domain/SysFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/config/controller/ConfigController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/config/domain/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/config/mapper/ConfigMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/config/service/ConfigServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/config/service/IConfigService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dept/controller/DeptController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dept/domain/Dept.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dept/mapper/DeptMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dept/service/DeptServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dept/service/IDeptService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dict/controller/DictDataController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dict/controller/DictTypeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dict/domain/DictData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dict/domain/DictType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dict/mapper/DictDataMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dict/mapper/DictTypeMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dict/service/DictDataServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dict/service/DictTypeServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dict/service/IDictDataService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dict/service/IDictTypeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/dict/utils/DictUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/menu/controller/MenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/menu/domain/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/menu/mapper/MenuMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/menu/service/IMenuService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/menu/service/MenuServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/notice/controller/NoticeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/notice/domain/Notice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/notice/mapper/NoticeMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/notice/service/INoticeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/notice/service/NoticeServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/post/controller/PostController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/post/domain/Post.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/post/mapper/PostMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/post/service/IPostService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/post/service/PostServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/role/controller/RoleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/role/domain/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/role/domain/RoleDept.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/role/domain/RoleMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/role/mapper/RoleDeptMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/role/mapper/RoleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/role/mapper/RoleMenuMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/role/service/IRoleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/role/service/RoleServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/controller/CaptchaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/controller/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/controller/ProfileController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/controller/RegisterController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/domain/UserPost.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/domain/UserRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/domain/UserStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/mapper/UserPostMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/mapper/UserRoleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/service/IUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/system/user/service/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/build/BuildController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/gen/controller/GenController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/gen/domain/GenTable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/gen/domain/GenTableColumn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/gen/mapper/GenTableColumnMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/gen/mapper/GenTableMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/gen/service/GenTableColumnServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/gen/service/GenTableServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/gen/service/IGenTableColumnService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/gen/service/IGenTableService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/gen/util/GenUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/gen/util/VelocityInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/gen/util/VelocityUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/swagger/SwaggerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/cx/nex/project/tool/swagger/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/application-druid.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/banner.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/ehcache/ehcache-shiro.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/monitor/JobLogMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/monitor/JobMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/monitor/LogininforMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/monitor/OnlineMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/monitor/OperLogMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/system/ConfigMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/system/DeptMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/system/DictDataMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/system/DictTypeMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/system/MenuMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/system/NoticeMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/system/PostMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/system/RoleDeptMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/system/RoleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/system/RoleMenuMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/system/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/system/UserPostMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/system/UserRoleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/tool/GenTableColumnMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis/tool/GenTableMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/beautifyhtml/beautifyhtml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/blockUI/jquery.blockUI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-fileinput/fileinput.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-fileinput/fileinput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-fileinput/fileinput.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-fileinput/fileinput.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-fileinput/loading-sm.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-fileinput/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-select/bootstrap-select.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-select/bootstrap-select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-select/bootstrap-select.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-select/bootstrap-select.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/bootstrap-table.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/bootstrap-table.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/columns/bootstrap-table-fixed-columns.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/columns/bootstrap-table-fixed-columns.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/editable/bootstrap-editable.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/editable/bootstrap-editable.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/editable/bootstrap-table-editable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/editable/bootstrap-table-editable.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/editable/clear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/editable/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/export/bootstrap-table-export.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/export/tableExport.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/mobile/bootstrap-table-mobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/print/bootstrap-table-print.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/reorder/bootstrap-table-reorder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/reorder/jquery.tablednd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/resizable/bootstrap-table-resizable.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/extensions/resizable/jquery.resizableColumns.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/locale/bootstrap-table-zh-CN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-table/locale/bootstrap-table-zh-CN.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/bootstrap-treetable/bootstrap-treetable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/cropper/cropper.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/cropper/cropper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/cropper/cropper.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/cropper/cropper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/cxselect/jquery.cxselect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/cxselect/jquery.cxselect.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/datapicker/bootstrap-datetimepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/datapicker/bootstrap-datetimepicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/datapicker/bootstrap-datetimepicker.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/datapicker/bootstrap-datetimepicker.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/duallistbox/bootstrap-duallistbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/duallistbox/bootstrap-duallistbox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/duallistbox/bootstrap-duallistbox.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/duallistbox/bootstrap-duallistbox.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/flot/curvedLines.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/flot/jquery.flot.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/flot/jquery.flot.pie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/flot/jquery.flot.resize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/flot/jquery.flot.spline.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/flot/jquery.flot.symbol.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/flot/jquery.flot.tooltip.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/fullscreen/jquery.fullscreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/highlight/default.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/highlight/highlight.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/iCheck/custom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/iCheck/green-login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/iCheck/green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/iCheck/green@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/iCheck/icheck.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jasny/jasny-bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jasny/jasny-bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jasny/jasny-bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jasny/jasny-bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-layout/jquery.layout-latest.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-layout/jquery.layout-latest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/img/diy/1_close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/img/diy/1_open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/img/diy/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/img/diy/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/img/diy/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/img/diy/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/img/diy/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/img/diy/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/img/diy/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/img/diy/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/img/line_conn.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/img/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/img/zTreeStandard.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/img/zTreeStandard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/default/zTreeStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/metro/img/line_conn.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/metro/img/line_conn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/metro/img/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/metro/img/metro.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/metro/img/metro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/metro/zTreeStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/simple/img/left_menu.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/simple/img/left_menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/simple/img/line_conn.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/simple/img/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/simple/img/zTreeStandard.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/simple/img/zTreeStandard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/css/simple/zTreeStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.all-3.5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.core-3.5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.excheck-3.5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.exedit-3.5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/js/jquery.ztree.exhide-3.5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jquery-ztree/3.5/log v3.x.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jsonview/jquery.jsonview.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/jsonview/jquery.jsonview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layer/layer.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layer/theme/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layer/theme/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layer/theme/default/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layer/theme/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layer/theme/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layer/theme/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layer/theme/moon/default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layer/theme/moon/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layui/css/modules/laydate/default/font/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layui/css/modules/laydate/default/font/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layui/css/modules/laydate/default/font/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layui/css/modules/laydate/default/font/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layui/lay/modules/laydate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/layui/layui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/report/echarts/echarts-all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/report/peity/jquery.peity.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/report/sparkline/jquery.sparkline.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/select2/select2-bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/select2/select2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/select2/select2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/select2/select2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/select2/select2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/smartwizard/jquery.smartWizard.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/smartwizard/smart_wizard_all.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/suggest/bootstrap-suggest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/suggest/bootstrap-suggest.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/summernote/font/summernote.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/summernote/font/summernote.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/summernote/font/summernote.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/summernote/summernote-bs3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/summernote/summernote-zh-CN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/summernote/summernote.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/summernote/summernote.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/summernote/summernote.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/typeahead/bootstrap3-typeahead.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/typeahead/bootstrap3-typeahead.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/validate/additional-methods.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/validate/jquery.validate.extend.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/validate/jquery.validate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/ajax/libs/validate/messages_zh.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/jquery.contextMenu.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/login.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/main/animate.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/main/bootstrap.min14ed.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/main/font-awesome.min93e3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/main/style.min862f.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/patterns/header-profile-skin-blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/patterns/header-profile-skin-yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/patterns/header-profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/patterns/shattered.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/skins.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/cxnex/css/easy-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/cxnex/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/cxnex/js/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/cxnex/js/easy-ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/cxnex/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/cxnex/register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/file/rml.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/Simple-Line-Icons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/i18n/messages.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/img/blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/img/loading-upload.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/img/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/img/locked.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/img/login-background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/img/profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/img/progress.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/img/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/jquery-ui-1.10.4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/jquery.contextMenu.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/jquery.i18n.properties.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/jquery.tmpl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/plugins/metisMenu/jquery.metisMenu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/plugins/slimscroll/jquery.slimscroll.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/resize-tabs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/autocomplete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/basic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/button.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/cards.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/cxselect.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/datetime.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/duallistbox.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/grid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/jasny.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/localrefresh.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/select.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/sortable.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/summernote.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/tabs_panels.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/timeline.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/upload.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/validate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/form/wizard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/icon/fontawesome.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/icon/glyphicons.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/modal/dialog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/modal/form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/modal/layer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/modal/table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/modal/table/check.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/modal/table/parent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/modal/table/radio.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/operate/add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/operate/detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/operate/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/operate/other.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/operate/table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/report/echarts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/report/metrics.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/report/peity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/report/sparkline.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/button.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/child.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/curd.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/data.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/editable.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/event.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/export.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/fixedColumns.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/groupHeader.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/headerStyle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/image.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/multi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/other.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/pageGo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/params.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/print.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/refresh.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/remember.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/reorder.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/resizable.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/demo/table/subdata.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/error/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/error/500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/error/business.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/error/unauth.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/include.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/index-topnav.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/monitor/job/add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/monitor/job/detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/monitor/job/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/monitor/job/job.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/monitor/job/jobLog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/monitor/logininfor/logininfor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/monitor/online/online.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/monitor/operlog/detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/monitor/operlog/operlog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/monitor/server/server.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/skin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/config/add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/config/config.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/config/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/dept/add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/dept/dept.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/dept/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/dept/tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/dict/data/add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/dict/data/data.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/dict/data/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/dict/type/add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/dict/type/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/dict/type/tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/dict/type/type.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/menu/add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/menu/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/menu/icon.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/menu/menu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/menu/tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/notice/add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/notice/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/notice/notice.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/post/add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/post/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/post/post.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/role/add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/role/authUser.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/role/dataScope.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/role/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/role/role.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/role/selectUser.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/user/add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/user/authRole.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/user/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/user/profile/avatar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/user/profile/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/user/profile/resetPwd.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/user/resetPwd.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/system/user/user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/tool/build/build.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/tool/gen/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/tool/gen/gen.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/tool/gen/importTable.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/vm/html/add.html.vm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/vm/html/edit.html.vm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/vm/html/list-tree.html.vm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/vm/html/list.html.vm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/vm/html/tree.html.vm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/vm/java/controller.java.vm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/vm/java/domain.java.vm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/vm/java/mapper.java.vm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/vm/java/service.java.vm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/vm/java/serviceImpl.java.vm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/vm/java/sub-domain.java.vm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/vm/sql/sql.vm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/vm/xml/mapper.xml.vm" beforeDir="false" />
+    <list default="true" id="e9b7edec-7d13-48da-ba89-1e9e1dd521d9" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -662,7 +48,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -672,13 +58,19 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="alwaysUpdateSnapshots" value="true" />
-        <option name="localRepository" value="C:\Repositiry2020" />
-        <option name="mavenHome" value="C:\apache-maven-3.5.4" />
-        <option name="userSettingsFile" value="C:\apache-maven-3.5.4\conf\settings.xml" />
+        <option name="localRepository" value="D:\maven\mavenrepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.9.3" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.9.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -692,16 +84,28 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/system/user" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Program Files/nodejs/node_global/vue",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "全局库",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.36666667",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "b8fddcc6844b91cff70d6d35df356a31",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -966,6 +370,8 @@
       <workItem from="1690590521890" duration="9238000" />
       <workItem from="1690617317096" duration="2700000" />
       <workItem from="1690682398196" duration="1006000" />
+      <workItem from="1690696027720" duration="2201000" />
+      <workItem from="1690767272115" duration="88000" />
     </task>
     <servers />
   </component>
@@ -982,69 +388,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="223" y="9" width="1089" height="815" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1690445159699">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="223" y="9" width="1089" height="815" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1690445159699" />
-    <state x="498" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1690445152599">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="498" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1690445152599" />
-    <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1690444870011">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1690444870011" />
-    <state x="651" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1690623242755">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="651" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1690623242755" />
-    <state x="549" y="166" key="FileChooserDialogImpl" timestamp="1690528956313">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1690528956313" />
-    <state width="1493" height="180" key="GridCell.Tab.0.bottom" timestamp="1690624848639">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1690624848639" />
-    <state width="1493" height="180" key="GridCell.Tab.0.center" timestamp="1690624848638">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1690624848638" />
-    <state width="1493" height="180" key="GridCell.Tab.0.left" timestamp="1690624848638">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1690624848638" />
-    <state width="1493" height="180" key="GridCell.Tab.0.right" timestamp="1690624848639">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1690624848639" />
-    <state width="1358" height="467" key="GridCell.Tab.1.bottom" timestamp="1690624848635">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1358" height="467" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1690624848635" />
-    <state width="1358" height="467" key="GridCell.Tab.1.center" timestamp="1690624848635">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1358" height="467" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1690624848635" />
-    <state width="1358" height="467" key="GridCell.Tab.1.left" timestamp="1690624848635">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1358" height="467" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1690624848635" />
-    <state width="1358" height="467" key="GridCell.Tab.1.right" timestamp="1690624848635">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1358" height="467" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1690624848635" />
-    <state x="270" y="56" key="SettingsEditor" timestamp="1690444737433">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1690444737433" />
-    <state x="356" y="62" key="new project wizard" timestamp="1690356812466">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="356" y="62" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1690356812466" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

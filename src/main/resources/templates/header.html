@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <footer th:fragment="header">
+        <div class="layui-header">
+            <div class=" layui-nav " style="font-size: x-large; color: #009688;line-height: 60px;"> 乐 学 智 慧 教 育 平 台</div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;" style="text-decoration:none">
+                        <img src="/h-ui/images/ucnter/avatar.png" class="layui-nav-img">
+                        <span th:text="${session.username}"></span>
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/system/admin/admin" text="text-decoration:none" style="text-decoration:none">个人中心</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="/login" style="text-decoration:none">退出登录</a></li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree">
+
+                    <li class="layui-nav-item ">
+                        <a class="" href="javascript:;" style="text-decoration:none">用户管理</a>
+                        <dl class="layui-nav-child">
+<!--                            <dd><a href="/staffinfo/registerlist" style="text-decoration:none">&emsp;&emsp;员工注册申请</a></dd>-->
+                            <dd><a href="/staffinfo/list" style="text-decoration:none">&emsp;&emsp;用户信息</a></dd>
+                        </dl>
+                    </li>
+
+                    <li class="layui-nav-item ">
+                        <a class="" href="javascript:;" style="text-decoration:none">教师管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/leaveinfo/list" style="text-decoration:none">&emsp;&emsp;教师信息</a></dd>
+                        </dl>
+                    </li>
+
+                    <li class="layui-nav-item ">
+                        <a class="" href="javascript:;" style="text-decoration:none">课程管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/check/list" style="text-decoration:none">&emsp;&emsp;课程信息</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+</head>
+</html>

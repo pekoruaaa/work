@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>乐学智慧教育平台</title>
+	<link href="/layui/css/layui.css" rel="stylesheet"/>
+
+</head>
+
+<div class="layui-layout layui-layout-admin">
+
+	<div th:include="header :: header"></div>
+
+	<div class="layui-body layui-container">
+		<div class="layui-container" id="index" style="margin-top: 40px;">
+			<div carousel-item>
+				<h1 align="center" style="margin-top: 280px">欢迎您，进入乐学智慧教育平台！</h1>
+			</div>
+		</div>
+	</div>
+
+	<div th:include="footer :: footer"></div>
+
+</div>
+
+<script src="/scripts/jquery.min.js"></script>
+<script src="/layui/layui.js"></script>
+<script>
+
+	layui.use(['carousel', 'element'], function () {
+		let carousel = layui.carousel;
+		let element = layui.element;
+
+		//建造实例
+		carousel.render({
+			elem: '#index'
+			, width: '900' //设置容器宽度
+			, height: '550px' //设置容器高度
+			// , full:'true' //是否全屏轮播,默认false
+			// , arrow: 'always' //始终显示箭头和点击按钮
+			// ,anim: 'updown' //切换动画方式，可从各个方向滚动
+		});
+	});
+
+</script>
+
+</body>
+</html>
