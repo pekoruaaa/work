@@ -1,0 +1,348 @@
+Index: css/home/newspace.css
+===================================================================
+diff --git a/css/home/newspace.css b/css/home/newspace.css
+deleted file mode 100644
+--- a/css/home/newspace.css	(revision 9c6cbb662c79d8bb7e4942d3d1f7d17130aadd0f)
++++ /dev/null	(revision 9c6cbb662c79d8bb7e4942d3d1f7d17130aadd0f)
+@@ -1,82 +0,0 @@
+-* {
+-    margin: 0;
+-    padding: 0;
+-    box-sizing: border-box;
+-}
+-
+-body {
+-    font-family: sans-serif;
+-    color: #343a40;
+-    font-size: 24px;
+-    height: 100vh;
+-    text-align: center;
+-    font-weight: bold;
+-
+-    display: grid;
+-    grid-template-columns: 80px 400px 1fr 250px;
+-    grid-template-rows: 80px 1fr;
+-}
+-
+-nav,
+-section,
+-main,
+-aside {
+-    padding-top: 24px;
+-}
+-
+-nav {
+-    background-color: #343a40;
+-    color: white;
+-    grid-row: 1 / -1;
+-}
+-
+-menu {
+-    background-color: #7048e8;
+-    grid-column: 2 / -1;
+-    display: flex;
+-    align-items: center;
+-    gap: 12px;
+-    padding: 0 40px;
+-}
+-
+-button {
+-    display: inline-block;
+-    font-size: 16px;
+-    font-weight: bold;
+-    background-color: #5f3dc4;
+-    border: none;
+-    cursor: pointer;
+-    color: #fff;
+-    padding: 8px 12px;
+-}
+-
+-button:last-child {
+-    background-color: #d6336c;
+-    margin-left: auto;
+-}
+-
+-section {
+-    background-color: #e9ecef;
+-    padding: 40px;
+-
+-    /* How elements that don't fit into container appear */
+-    overflow: scroll;
+-
+-    display: flex;
+-    flex-direction: column;
+-    gap: 40px;
+-}
+-
+-.email {
+-    background-color: #adb5bd;
+-    height: 96px;
+-    flex-shrink: 0;
+-
+-    display: flex;
+-    align-items: center;
+-    justify-content: center;
+-}
+-
+-aside {
+-    background-color: #e9ecef;
+-}
+\ No newline at end of file
+Index: home.html
+===================================================================
+diff --git a/home.html b/home.html
+deleted file mode 100644
+--- a/home.html	(revision 9c6cbb662c79d8bb7e4942d3d1f7d17130aadd0f)
++++ /dev/null	(revision 9c6cbb662c79d8bb7e4942d3d1f7d17130aadd0f)
+@@ -1,33 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8" />
+-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-    <link rel="stylesheet" href="css/home/newspace.css">
+-    <title>首页</title>
+-</head>
+-<body>
+-<nav>nav</nav>
+-<menu>
+-    <button>New</button>
+-    <button>Reply</button>
+-    <button>Forward</button>
+-    <button>Mark unread</button>
+-    <button>Trash</button>
+-</menu>
+-<section>
+-    <div class="email">Email 1</div>
+-    <div class="email">Email 2</div>
+-    <div class="email">Email 3</div>
+-    <div class="email">Email 4</div>
+-    <div class="email">Email 5</div>
+-    <div class="email">Email 6</div>
+-    <div class="email">Email 7</div>
+-    <div class="email">Email 8</div>
+-    <div class="email">Email 9</div>
+-    <div class="email">Email 10</div>
+-</section>
+-<main>Email view</main>
+-</body>
+-</html>
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+new file mode 100644
+--- /dev/null	(date 1690442956000)
++++ b/pom.xml	(date 1690442956000)
+@@ -0,0 +1,145 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++    <parent>
++        <groupId>org.springframework.boot</groupId>
++        <artifactId>spring-boot-starter-parent</artifactId>
++        <version>2.5.0</version>
++        <relativePath/> <!-- lookup parent from repository -->
++    </parent>
++    <groupId>com.ruanko.hlearning</groupId>
++    <artifactId>hlearning</artifactId>
++    <version>0.0.1-SNAPSHOT</version>
++    <name>hlearning</name>
++    <description>hlearning Demo project for Spring Boot</description>
++
++    <properties>
++        <java.version>1.8</java.version>
++    </properties>
++
++    <dependencies>
++        <!-- 启动 web -->
++        <dependency>
++            <groupId>org.springframework.session</groupId>
++            <artifactId>spring-session-core</artifactId>
++            <version>2.4.6</version>
++        </dependency>
++        <dependency>
++            <groupId>org.springframework.session</groupId>
++            <artifactId>spring-session-data-redis</artifactId>
++            <version>2.4.6</version>
++        </dependency>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++        </dependency>
++
++        <!-- 属性文件提示 -->
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-configuration-processor</artifactId>
++            <optional>true</optional>
++        </dependency>
++        <!-- mybatis 依赖 -->
++        <dependency>
++            <groupId>org.mybatis.spring.boot</groupId>
++            <artifactId>mybatis-spring-boot-starter</artifactId>
++            <version>2.0.0</version>
++        </dependency>
++        <!-- mysql 连接类 -->
++        <dependency>
++            <groupId>mysql</groupId>
++            <artifactId>mysql-connector-java</artifactId>
++            <scope>runtime</scope>
++        </dependency>
++        <!-- druid 数据库连接池-->
++        <dependency>
++            <groupId>com.alibaba</groupId>
++            <artifactId>druid</artifactId>
++            <version>1.1.9</version>
++        </dependency>
++        <!-- lombok 插件 用于简化实体代码 -->
++        <dependency>
++            <groupId>org.projectlombok</groupId>
++            <artifactId>lombok</artifactId>
++            <optional>true</optional>
++        </dependency>
++        <!-- 测试所需依赖 -->
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-test</artifactId>
++            <scope>test</scope>
++        </dependency>
++
++
++
++        <!-- hibernate java持久化，把数据表转换为实体类 -->
++        <dependency>
++            <groupId>org.hibernate.javax.persistence</groupId>
++            <artifactId>hibernate-jpa-2.1-api</artifactId>
++            <version>1.0.0.Final</version>
++        </dependency>
++
++        <!--   pagehelper 分页插件     -->
++        <dependency>
++            <groupId>com.github.pagehelper</groupId>
++            <artifactId>pagehelper-spring-boot-starter</artifactId>
++            <version>1.3.0</version>
++        </dependency>
++        <!-- thymeleaf 模板引擎依赖-->
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-thymeleaf</artifactId>
++            <version>2.1.3.RELEASE</version>
++        </dependency>
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.12</version>
++            <scope>test</scope>
++        </dependency>
++        <dependency>
++            <groupId>org.springframework</groupId>
++            <artifactId>spring-beans</artifactId>
++            <version>5.3.23</version>
++        </dependency>
++
++
++    </dependencies>
++
++    <build>
++        <resources>
++            <resource>
++                <directory>src/main/java</directory><!--java文件的路径-->
++                <includes>
++                    <include>**/*.*</include>
++                </includes>
++
++                <!-- <filtering>false</filtering>-->
++            </resource>
++            <resource>
++                <directory>src/main/resources</directory><!--资源文件的路径-->
++                <includes>
++                    <include>**/*.*</include>
++                </includes>
++                <filtering>true</filtering>
++                <!-- <filtering>false</filtering>-->
++            </resource>
++        </resources>
++
++        <plugins>
++            <plugin>
++                <groupId>org.springframework.boot</groupId>
++                <artifactId>spring-boot-maven-plugin</artifactId>
++            </plugin>
++
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-resources-plugin</artifactId>
++                <version>3.1.0</version>
++            </plugin>
++        </plugins>
++    </build>
++
++</project>
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_17\" default=\"true\" project-jdk-name=\"corretto-17(2)\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 9c6cbb662c79d8bb7e4942d3d1f7d17130aadd0f)
++++ b/.idea/misc.xml	(date 1690691185395)
+@@ -8,7 +8,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17(2)" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_20" project-jdk-name="corretto-17(2)" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1690356818000)
++++ b/.gitignore	(date 1690356818000)
+@@ -0,0 +1,33 @@
++HELP.md
++target/
++!.mvn/wrapper/maven-wrapper.jar
++!**/src/main/**/target/
++!**/src/test/**/target/
++
++### STS ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++
++### IntelliJ IDEA ###
++.idea
++*.iws
++*.iml
++*.ipr
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++build/
++!**/src/main/**/build/
++!**/src/test/**/build/
++
++### VS Code ###
++.vscode/
