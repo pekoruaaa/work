@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface TeacherMapper {
 
-    Teacher findInfo();
+    Teacher findInfo(int id);
 
     String findPwd(int id);
 

@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -18,16 +19,18 @@ public class TeacherController {
     private TeacherService teacherService;
 
     @RequestMapping("/information")
-    public String information(Model model){
-        Teacher teacher = teacherService.findInfo();
+    public String information(Model model, HttpSession session){
+        int id = Integer.parseInt(session.getAttribute("id").toString());
+        Teacher teacher = teacherService.findInfo(id);
         model.addAttribute("teacher",teacher);
         return "system/teacher/teacher";
     }
 
     @RequestMapping("/updateInfo")
-    public String updateInfo(Teacher teacher, Model model, HttpServletResponse res) throws IOException {
+    public String updateInfo(Teacher teacher, Model model, HttpServletResponse res, HttpSession session) throws IOException {
         int result = teacherService.updateInfo(teacher);
-        Teacher teacher1 = teacherService.findInfo();
+        int id = Integer.parseInt(session.getAttribute("id").toString());
+        Teacher teacher1 = teacherService.findInfo(id);
         model.addAttribute("teacher",teacher1);
         res.setContentType("text/html;charset=utf-8");
         PrintWriter out = res.getWriter();
@@ -43,8 +46,9 @@ public class TeacherController {
     }
 
     @RequestMapping("/updatePwd")
-    public String updatePwd(int tc_id1,String tc_pwd,String zpwd, Model model, HttpServletResponse res) throws IOException {
-        Teacher teacher1 = teacherService.findInfo();
+    public String updatePwd(int tc_id1,String tc_pwd,String zpwd, Model model, HttpSession session, HttpServletResponse res) throws IOException {
+        int id = Integer.parseInt(session.getAttribute("id").toString());
+        Teacher teacher1 = teacherService.findInfo(id);
         model.addAttribute("teacher",teacher1);
         res.setContentType("text/html;charset=utf-8");
         PrintWriter out = res.getWriter();
@@ -69,9 +73,10 @@ public class TeacherController {
     }
 
     @RequestMapping("/delete")
-    public String delete(int id, Model model, HttpServletResponse res) throws IOException {
+    public String delete(int id, Model model, HttpSession session, HttpServletResponse res) throws IOException {
         int result = teacherService.delete(id);
-        Teacher teacher1 = teacherService.findInfo();
+        int tc_id = Integer.parseInt(session.getAttribute("id").toString());
+        Teacher teacher1 = teacherService.findInfo(tc_id);
         model.addAttribute("teacher",teacher1);
         res.setContentType("text/html;charset=utf-8");
         PrintWriter out = res.getWriter();

@@ -4,7 +4,7 @@
 <mapper namespace="com.ruanko.hlearning.teacher.mapper.TeacherMapper">
 
     <select id="findInfo" resultType="com.ruanko.hlearning.teacher.entity.Teacher">
-        select * from teacher where tc_id = 1
+        select * from teacher where tc_id = #{tc_id}
     </select>
 
     <select id="findPwd" resultType="string">
