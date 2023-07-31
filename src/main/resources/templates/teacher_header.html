@@ -3,7 +3,7 @@
 <head>
     <footer th:fragment="header">
         <div class="layui-header">
-            <div class=" layui-nav " style="font-size: x-large; color: #009688;line-height: 60px;">乐 学 智 慧 教 育 平 台</div>
+            <div class=" layui-nav " style="font-size: x-large; color: #000000;line-height: 60px;">乐 学 智 慧 教 育 平 台</div>
             <!-- 头部区域（可配合layui已有的水平导航） -->
             <ul class="layui-nav layui-layout-right">
                 <li class="layui-nav-item">
@@ -12,10 +12,10 @@
                         <span th:text="${session.username}"></span>
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a th:href="@{/information}">个人中心</a></dd>
+                        <dd><a th:href="@{/information}" >个人中心</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href="/login">退出登录</a></li>
+                <li class="layui-nav-item"><a href="/login" >退出登录</a></li>
             </ul>
         </div>
 
@@ -23,19 +23,41 @@
             <div class="layui-side-scroll">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <ul class="layui-nav layui-nav-tree">
+                    <li class="layui-nav-item ">
+
+                        <a class="" href="javascript:;" >个人中心</a>
+                        <dl class="layui-nav-child">
+                            <dd><a th:href="@{/userInfo}">基本信息</a></dd>
+                        </dl>
+                    </li>
+
 
                     <li class="layui-nav-item ">
-                        <a class="" href="javascript:;">个人课程</a>
+                        <a class="" href="javascript:;" >个人课程</a>
                         <dl class="layui-nav-child">
-                            <dd><a th:href="@{/courselist}">&emsp;&emsp;查询课程</a></dd>
-                            <dd><a th:href="@{/waitCourseList}">&emsp;&emsp;上传课程资源</a></dd>
+                            <dd><a th:href="@{/courselist}" >查询课程</a></dd>
+                            <dd><a th:href="@{/waitCourseList}" >上传课程资源</a></dd>
+                        </dl>
+                    </li>
+
+                    <li class="layui-nav-item ">
+                        <a class="" href="javascript:;" >我的课程</a>
+                        <dl class="layui-nav-child">
+                            <dd><a th:href="@{/courselist}">查询课程</a></dd>
+                        </dl>
+                    </li>
+
+                    <li class="layui-nav-item ">
+                        <a class="" href="javascript:;" >我的点赞</a>
+                        <dl class="layui-nav-child">
+                            <dd><a th:href="@{/courselist}">点赞课程</a></dd>
                         </dl>
                     </li>
 
                     <li class="layui-nav-item ">
                         <a class="" href="javascript:;">私信</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="/checkUser/list">&emsp;&emsp;查看私信</a></dd>
+                            <dd><a href="/checkUser/list">查看私信</a></dd>
                         </dl>
                     </li>
                 </ul>

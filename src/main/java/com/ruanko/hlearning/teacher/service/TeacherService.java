@@ -4,7 +4,7 @@ import com.ruanko.hlearning.teacher.entity.Teacher;
 
 public interface TeacherService {
 
-    Teacher findInfo();
+    Teacher findInfo(int id);
 
     String findPwd(int id);
 

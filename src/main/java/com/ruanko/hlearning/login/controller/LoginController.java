@@ -50,6 +50,11 @@ public class LoginController {
         return "index";
     }
 
+    @RequestMapping("/userInfo")
+    public String userInfo(){
+        return "system/teacher/teacher";
+    }
+
     //登陆
     @RequestMapping("/login")
     public String login(HttpServletRequest req, HttpSession session, HttpServletResponse response)throws IOException {

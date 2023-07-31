@@ -12,8 +12,8 @@ public class TeacherServiceImpl implements TeacherService {
     @Autowired
     private TeacherMapper teacherMapper;
 
-    public Teacher findInfo(){
-        Teacher teacher = teacherMapper.findInfo();
+    public Teacher findInfo(int id){
+        Teacher teacher = teacherMapper.findInfo(id);
         return teacher;
     }
 

@@ -27,7 +27,7 @@ public class CourseController {
     public String findAllCourses(Model model){
         List<Course> results = courseService.findAllCourses();
         model.addAttribute("courses",results);
-        return "teacherPage/course/courselist";
+        return "system/teacher/course/courselist";
     }
 
     @RequestMapping("/waitCourseList")
